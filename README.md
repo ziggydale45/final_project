@@ -18,4 +18,4 @@ boxes that turn round! When someone walks in the room, my boxes look at them!
 
 1. Motion Sensing https://motion-project.github.io/motion_config.html
 
-2. Serial Communication Between Arduino and Rasp Pi https://www.instructables.com/id/Raspberry-Pi-Arduino-Serial-Communication/
+2. Serial Communication Between Arduino and Rasp Pi https://classes.engineering.wustl.edu/ese205/core/index.php?title=Serial_Communication_between_Raspberry_Pi_%26_Arduino
