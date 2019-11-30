@@ -13,3 +13,9 @@ boxes that turn round! When someone walks in the room, my boxes look at them!
 [3 servo success](https://www.youtube.com/watch?v=TaTb5RKhFxs)
 
 [raspberry pi to arduino to servo success](https://www.youtube.com/watch?v=B6R78sFvO4M)
+
+# Sources
+
+1. Motion Sensing https://motion-project.github.io/motion_config.html
+
+2. Serial Communication Between Arduino and Rasp Pi https://www.instructables.com/id/Raspberry-Pi-Arduino-Serial-Communication/
