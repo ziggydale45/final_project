@@ -3,6 +3,19 @@
 # What is it
 boxes that turn round! When someone walks in the room, my boxes look at them!
 
+I've downloaded a motion sensing program, called Motion, to my Raspberry Pi. When someone walks into the camera frame, I've used a built in Motion function, called Event On, to turn the block towards that person. When the person walks out of the frame, the Event Off function turns the blocks back to their base state.
+
+The Event On function calls a shell script which, in turn, runs a Python script which activates a serial session and sends a "1" to the Arduino. The Arduino interprets the "1" as a high state and turns the servos (on which the blocks are mounted) to a defined position until it recieves a "0".  To send the "0", Motion behaves in a similar manner. When that person leaves the frame, the Event Off function will call a shell script, which then calls a Python script, which sends the "0" via serial to the Arduino. Once the "0" is recieved, the Arduino will turn the servos back to their starting position. 
+
+# What is it
+
+Segmentation Fault
+
+Serial session not starting unless serial monitor manually opened in Arduino.
+
+Big Servos not working
+
+
 # Printing the Boxes
 [servo mount](https://www.youtube.com/watch?v=YtCwzTg-Wek)
 
