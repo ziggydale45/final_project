@@ -7,11 +7,13 @@ I've downloaded a motion sensing program, called Motion, to my Raspberry Pi. Whe
 
 The Event On function calls a shell script which, in turn, runs a Python script which activates a serial session and sends a "1" to the Arduino. The Arduino interprets the "1" as a high state and turns the servos (on which the blocks are mounted) to a defined position until it recieves a "0".  To send the "0", Motion behaves in a similar manner. When that person leaves the frame, the Event Off function will call a shell script, which then calls a Python script, which sends the "0" via serial to the Arduino. Once the "0" is recieved, the Arduino will turn the servos back to their starting position. 
 
-# What is it
+# Problems
 
-Segmentation Fault
+1) The case of the mysterious Segmentation Fault.
 
-Serial session not starting unless serial monitor manually opened in Arduino.
+  Motion works by continually taking pictures at a specified rate. It saves the photos to a location and compares the most recent photo with the last photo. If there are changes, Motion runs the Event On function. This method takes up a ton of space on my Pi and was triggering seg faults. I worked around this by saving the pictures to a folder on my desktop called stinky_pics which I clear out after every session.
+
+2) The python file alone cannot initiate a serial session, despite having `serial.Serial('/dev/ttyUSB0', 9600)` written in. I've tried debugging this, but found a functional workaround by opening a serial monitor manually in Arduino.
 
 Big Servos not working
 
