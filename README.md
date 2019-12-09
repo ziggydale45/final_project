@@ -9,13 +9,17 @@ The Event On function calls a shell script which, in turn, runs a Python script 
 
 # Problems
 
-1) The case of the mysterious Segmentation Fault.
+1) Segmentation Faults
 
   Motion works by continually taking pictures at a specified rate. It saves the photos to a location and compares the most recent photo with the last photo. If there are changes, Motion runs the Event On function. This method takes up a ton of space on my Pi and was triggering seg faults. I worked around this by saving the pictures to a folder on my desktop called stinky_pics which I clear out after every session.
 
-2) The python file alone cannot initiate a serial session, despite having `serial.Serial('/dev/ttyUSB0', 9600)` written in. I've tried debugging this, but found a functional workaround by opening a serial monitor manually in Arduino.
+2) Serial Mysteries
 
-Big Servos not working
+The python file alone cannot initiate a serial session, despite having `serial.Serial('/dev/ttyUSB0', 9600)` written in. I've tried debugging this, but found a functional workaround by opening a serial monitor manually in Arduino.
+
+3) Servo Trouble
+
+  We initially wanted to use larger blocks mounted on larger servos. Unfortunately, the servos we found were propietary Meccano servos, so we were unable to find relevant data sheets. When we plugged them into our circuits, they knocked the Arduino's offline. We were ultimately unable to resolve this, so opted to go with the smaller servos and laser cut/origami boxes.
 
 
 # Printing the Boxes
@@ -24,7 +28,12 @@ Big Servos not working
 [box no fit](https://www.youtube.com/watch?v=iaxFFt6FpS0)
 
 
+
+
 # Code Vids
+
+[Final project success!](https://youtu.be/HbOEPSdQ5ss)
+
 [3 servo success](https://www.youtube.com/watch?v=TaTb5RKhFxs)
 
 [raspberry pi to arduino to servo success](https://www.youtube.com/watch?v=B6R78sFvO4M)
