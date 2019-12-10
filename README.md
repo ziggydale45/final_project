@@ -38,6 +38,14 @@ The python file alone cannot initiate a serial session, despite having `serial.S
 
 [raspberry pi to arduino to servo success](https://www.youtube.com/watch?v=B6R78sFvO4M)
 
+# Reaction Vids
+[Vid 1](https://youtu.be/kg2Wc3Oz3Ic)
+[Vid 2](https://youtu.be/xynTfQRb8lw)
+[Vid 3](https://youtu.be/n70Gojgj8r4)
+[Vid 4](https://youtu.be/e8Hx_xIOZo8)
+[Vid 5](https://youtu.be/qFUbc_twAZQ)
+[Vid 6](https://youtu.be/yMtPaqgF0y4)
+
 # Sources
 
 1. Motion Sensing https://motion-project.github.io/motion_config.html
